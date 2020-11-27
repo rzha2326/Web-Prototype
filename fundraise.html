@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Make-A-Wish</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+</head>
+
+<body>
+	<header>
+    <figure>
+        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+    </figure>
+    <nav>
+      <ul class="ul">
+        <li class="li"><a href="index.html#wishjourney">wish journey</a></li>
+        <li class="li"><a href="index.html#wishstories">wish stories</a></li>
+        <li class="li"><a href="index.html#getinvolved">get involved</a>
+          <ul class="dropdown">
+            <li class="dropdown-li"><a href="donate.html">donate</a></li>
+            <li class="dropdown-li"><a href="fundraise.html">fundraise</a></li>
+            <li class="dropdown-li"><a href="volunteer.html">volunteer</a></li>
+            <li class="dropdown-li"><a href="share.html">share</a></li>
+          </ul>
+        </li>
+		  </ul>
+    </nav>
+    <a href="donate.html"><button class="donatebutton">DONATE</button></a>
+	</header>
+
+  <main>
+    <section class="fundraisersectionone">
+      <div class="findingnearestfundraiser">
+        <h2 class="fundraiseheading">Fundraise</h2>
+        <p class="fundraisedescription">There are so many ways you can raise money and have an impact - as an individual, family or business. Every dollar raised means more wishes can be fulfilled for critically ill kids and their families. Find your nearest fundraiser by entering your postcode here!</p>
+        <form>
+          <ul>
+            <li>
+              <label class="enterpasscode"for="postcode">enter your postcode</label>
+              <input id="postcodefundraise" name="postcode" type="text" pattern="[0-9]*" maxlength="4"required>
+            </li>
+          </ul>
+        </form>
+        <a href="#nearestfundraiser">><button class="findfundraiserbutton">find nearest fundraiser</button></a>
+      </div>
+      <div class="upcomingevents">
+        <p class="upcomingeventsheading">upcoming events</p>
+        <ul class="upcomingeventslist">
+          <li><p class="eventdate">MAR<br>2021</p>
+            <a href="https://fundraise.makeawish.org.au/event/bays-wish/home"><p class="eventname"><b>Bays' Wish<br></b>Join the ride of a lifetime to bring<br>life-changing wishes to sick kids.</p></a>
+          </li>
+          <li><p class="eventdate">APR<br>2021</p>
+            <a href="https://events.solemotive.com/canberra-times-marathon-festival/"><p class="eventname"><b>Australian Running Festival</b><br>Join thousands of runners in<br>Canberras part of Team Wish.</p></a>
+          </li>
+          <li><p class="eventdate">MAY<br>2021</p>
+            <a href="https://smhhalfmarathon.com.au/"><p class="eventname"><b>SMH Half Marathon</b><br>Join Team Wish at Australia's<br>largesthalf marathon.</p></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="nearestfundraiser">
+      <h4>nearest fundraisers to you</h4>
+      <p class="nearestfundraiserdescription">These are the nearest fundraisers closest to you. Head to the official pages of these fundraisers to learn more or sign up for your place in the event by clicking on one of these fundraisers.</p>
+      <figure><img src="images/sydney.png" alt="sydney map" class="sydneymap"></figure>
+      <div class="locationone">
+        <a href="https://city2surf.com.au/"><p class="event"><b>City2Surf: March 25, 2021</b><br>Run, jog, walk or stroll<br>the famous 14km course<br>from Sydney's CBD<br>to Bondi Beach</p></a>
+      </div>
+      <div class="locationtwo">
+        <a href="https://sydneyrunningfestival.com.au/"><p class="event"><b>Sydney Running Festival: September 19, 2021</b><br>Run across Sydney<br>Harbour Bridge and<br>finish at the <br>Sydney Opera House</p></a>
+      </div>
+      <div class="locationthree">
+        <a href="https://smhhalfmarathon.com.au/"><p class="eventthree"><b>SMH Half Marathon:<br>May 16, 2021</b><br>Run through Sydney's<br>central business district,<br>starting from College<br>Street and finish<br>at Hyde Park</p></a>
+      </div>
+    </section>
+    <section class="morefundraisers">
+      <h4>other fundraisers near you</h4>
+      <img class="listofevents" src="images/moreevents.png" alt="other events">
+      <div class="ausrunningfest">
+        <p><b>Australian Running<br>Festival</b></p>
+        <p>Join thousands of<br>runners in Canberra<br>as part of Team Wish</p>
+      </div>
+      <div class="bayswish">
+        <p><b>Bays' Wish</b></p>
+        <p>Join the ride of a lifetime<br>to bring life-changing<br>wishes to sick kids</p>
+      </div>
+      <div class="runmelb">
+        <p><b>Run Melbourne</b></p>
+        <p>Be a part of Team<br>Wish and hit the<br>streets of Melbourne</p>
+      </div>
+      <div class="melbmarathon">
+        <p><b>Melbourne Marathon<br>Festival</b></p>
+        <p>Experience one of<br>the world's liveable<br>cities on foot</p>
+      </div>
+      <div class="noosatriathlon">
+        <p><b>Noosa Triathalon<br>Festival</b></p>
+        <p>Take part in one of<br>the most sought after<br>triathlons in the world</p>
+      </div>
+      <div class="citybay">
+        <p><b>City-Bay Fun Run</b></p>
+        <p>Take on the challenge<br>of South Australia's<br>largest fun run</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fundraisefooter">
+    <div class="aboutusfooter">
+      <ul>
+        <li><p class="footermenu"><b>about us</b></p></li>
+        <a href="index.html#aboutus"><li class="footer-li">about Make-A-Wish</li></a>
+        <a href="index.html#statistics"><li class="footer-li">statistics</li></a>
+        <a href="index.html"><li class="footer-li">Make-A-Wish raffle</li></a>
+        <a href="index.html#wishstories"><li class="footer-li">wish stories</li></a>
+        <a href="index.html#wishjourney"><li class="footer-li">wish journey</li></a>
+      </ul>
+    </div>
+    <div class="getinvolvedfooter">
+      <ul>
+        <li><p class="footermenu"><b>get involved</b></p></li>
+        <a href="donate.html"><li class="footer-li">donate</li></a>
+        <a href="fundraise.html"><li class="footer-li">fundraise</li></a>
+        <a href="volunteer.html"><li class="footer-li">volunteer</li></a>
+        <a href="share.html"><li class="footer-li">share</li></a>
+      </ul>
+    </div>
+    <div class="contactusfooter">
+      <ul>
+        <li><p class="footermenu"><b>contact us</b></p></li>
+        <li class="nolink"><b>call:</b> 1800 032 260</li>
+        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Contact+Us+-+website+query&to=enquiries@makeawish.org.au"><li class="footer-li"><b>email:</b> enquiries@makeawish.org.au</li></a>
+        <a href="https://goo.gl/maps/webyVfmxEiWyQFae6"><li class="footer-li"><b>address:</b><br>
+        Make-A-Wish Australia<br>
+        Level 1, Chruch Street<br>
+        Richmond, VIC 3121</li></a>
+        <li class="nolink"><b>mail:</b> PO Box 5006,<br>
+        Burnley 3121</li>
+      </ul>
+    </div>
+    <div class="socialfooter">
+      <ul>
+        <li><p class="footermenu"><b>get social!</b></p></li>
+        <li class="nolink">tag us @MakeAWishAust</li>
+      </ul>
+      <figure class="socialmediaicons">
+        <a href="https://www.facebook.com/MakeAWishAust/"><img src="images/facebook.png" class="icon" alt="facebok icon"></a>
+        <a href="https://www.youtube.com/c/MakeawishOrgAu/featured"><img src="images/youtube.png" class="icon" alt="youtube icon"></a>
+        <a href="https://twitter.com/MakeAWishAust"><img src="images/twitter.png" class="icon" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/makeawishaust/"><img src="images/instagram.png" class="icon" alt="instagram icon"></a>
+        <a href="https://www.linkedin.com/company/makeawishaust"><img src="images/linkedin.png" class="icon" alt="linkedin icon"></a>
+      </figure>
+    </div>
+  </footer>
+</body>
+</html>

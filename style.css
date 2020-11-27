@@ -1,0 +1,1726 @@
+/* LANDING PAGE */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ECF3F4;
+}
+
+.logo {
+  width: 230px;
+  float: left;
+  position: relative;
+  top: 40px;
+  left: 70px;
+}
+
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.li {
+  float: left;
+}
+
+nav {
+  padding: 55px 50px 0px 360px;
+}
+
+.li a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #3F6F89;
+  letter-spacing: 1px;
+  font-size: 18px;
+  display: inline-block;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-decoration: none;
+}
+
+.li a:hover {
+  color: rgb(47, 76, 92);
+}
+
+.li a:active {
+  color: rgb(136, 176, 197);
+}
+
+.ul .li .dropdown {
+  background-color: rgb(220, 235, 240);
+  visibility: hidden;
+  padding-bottom: 10px;
+  z-index: 2;
+  position: relative;
+  list-style: none;
+}
+
+.ul .li:hover > .dropdown, .dropdown .dropdown-li .dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
+.ul .li .dropdown .dropdown-li {
+  position: relative;
+  right: 25px;
+  text-align: center;
+  clear: both;
+  padding-top: 10px;
+  width: 100%;
+  z-index: 3;
+}
+
+.donatebutton {
+  position: relative;
+  top: -190px;
+  float: right;
+  margin-right: 110px;
+  width: 160px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #FFB94D;
+  border: none;
+  color:#303030;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+}
+
+.donatebutton:hover {
+background-color: rgb(255, 173, 51);
+cursor: pointer;
+}
+
+.donatebutton:active {
+  background-color: rgb(255, 203, 125);
+}
+
+/* main */
+/* raffles */
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 130px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #30546C;
+  position: relative;
+  top: -200px;
+  z-index: 1;
+  }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: #303030;
+  letter-spacing: 1px;
+
+}
+.raffledescription {
+  width: 600px;
+  margin-left: 200px;
+  position: relative;
+  top: -270px;
+}
+
+.raffleprices {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  float: right;
+  right: 200px;
+  top: -450px;
+}
+
+.price {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #C3DCDF;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #3F6F89;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  top: -10px;
+  border: none;
+}
+
+.caption {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #3F6F89;
+  text-align: center;
+  margin-top: -5px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.luckywinner {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  top: -240px;
+  margin: 0;
+}
+
+.raffleprizes {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -200px;
+  margin: 0;
+}
+
+.extravouchers {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  top: -210px;
+  text-align: center;
+}
+
+.raffledetails {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -200px;
+}
+
+#raffletickets{
+  height: 1450px;
+  }
+
+/* purchase your tickets */
+input[type='checkbox'] { 
+  display: none;
+  } 
+  
+.lbl-toggle { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 270px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #FFB94D;
+  color:#303030;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  padding-top: 20px;
+}
+
+.lbl-toggle:hover { 
+  background-color: rgb(255, 173, 51);
+  cursor: pointer;  
+} 
+  
+.lbl-toggle::before { 
+    content: ' '; 
+    display: inline-block; 
+    border-top: 5px solid transparent; 
+    border-bottom: 5px solid transparent; 
+    border-left: 5px solid currentColor; 
+    vertical-align: middle; 
+    margin-right: .7rem; 
+    transform: translateY(-2px); 
+    transition: transform .2s ease-out; 
+    } 
+    
+.toggle:checked+.lbl-toggle::before { 
+  transform: rotate(90deg) translateX(-3px); 
+} 
+      
+.collapsible-content { 
+  max-height: 0; 
+  margin: 0;
+  width: 100%;
+  overflow: hidden; 
+  transition: max-height .25s ease-in-out;
+  position: relative;
+  top: -20px;
+  background-color: rgb(214, 233, 236);
+  display: inline-flex;
+  /* align-items items in column */
+  flex-direction: column;
+  /* center items horizontally */
+  align-items: center;
+  /* center items vertically */
+  justify-content: center;
+
+  } 
+  
+.toggle:checked + .lbl-toggle + .collapsible-content { 
+    max-height: 1000px; 
+} 
+
+.toggle:checked+.lbl-toggle { 
+  border-bottom-right-radius: 0; 
+  border-bottom-left-radius: 0; 
+} 
+
+.collapsible-content .content-inner { 
+  padding: .5rem 1rem; 
+} 
+
+.collapsible-content p { 
+  margin-bottom: 0; 
+}
+
+.wrap-collabsible {
+  position: relative;
+  top: -130px;
+}
+
+.progressbar {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  position: relative;
+  top: -40px;
+}
+
+.content-inner {
+  position: relative;
+  top: -30px;
+  display: block;
+  justify-content: center;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #303030;
+  letter-spacing: 1px;
+  position: relative;
+  top: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;   
+  }
+
+.payment-ul .payment-li {
+  list-style: none;
+  margin: 45px 0;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  color: #303030;
+  font-family: 'Opens Sans', sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  top: -20px;
+  }
+
+input {
+  border-radius: 7px;
+}
+#name,
+#email,
+#phone,
+#DOB,
+#address,
+#numberoftickets {
+  padding-left: 5px;
+  width: 300px;
+  height: 25px;
+} 
+
+#medicalcondition {
+  width: 300px;
+  height: 100px;
+}
+
+#city {
+  width: 120px;
+  height: 25px;
+  margin-right: 10px
+}
+
+#postcode, #state {
+  width: 50px;
+  height: 25px;
+}
+
+#cardnumber {
+  width: 140px;
+  height: 25px;
+}
+
+#expirydate {
+  width: 90px;
+  height: 25px;
+}
+
+#cvc {
+  width: 40px;
+  height: 25px;
+}
+
+input:focus {
+  border: 2px solid #303030;
+}
+
+.addresselements {
+display: inline-block;
+margin-right: 10px;
+}
+
+.formcolumn {
+  display: inline-block;
+  width: 30%;
+}
+
+.buyraffleticketsform {
+  position: relative;
+  left: 150px;
+}
+
+.total {
+  width: 300px;
+  border: 1px solid #303030;
+  background-color: white;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  position: relative;
+  top: 20px;
+}
+
+.total p {
+  font-size: 20px;
+}
+
+#buyraffleticketsform {
+  display: inline-flex;
+  /* align-items items in column */
+  flex-direction: row;
+  /* center items horizontally */
+  align-items: center;
+  /* center items vertically */
+  justify-content: center;
+}
+
+.buybutton {
+  background-color: #FFB94D;
+  width: 180px;
+  height: 60px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  color:#303030;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 70px;
+}
+
+.buybutton:hover {
+  background-color: rgb(255, 173, 51);
+  cursor: pointer;
+}
+
+.buybutton:active {
+  background-color: rgb(255, 203, 125);
+}
+
+.totalandpurchase {
+  display: inline-flex;
+  /* align-items items in column */
+  flex-direction: column;
+  /* center items horizontally */
+  align-items: center;
+  /* center items vertically */
+  justify-content: center;
+}
+
+/* aboutus */
+.yearsofwishes p  {
+  width: 600px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.yearsofwishes img {
+  float: right;
+  margin-left: 60px;
+}
+
+.yearsofwishes {
+  display: inline-flex;
+  /* align-items items in column */
+  flex-direction: row;
+  /* center items horizontally */
+  align-items: center;
+  /* center items vertically */
+  justify-content: center;
+}
+
+.ourwishes p ul li {
+  width: 600px;
+  display: block;
+}
+
+.ourwishes p{
+  width: 600px;
+}
+
+.ourwishes ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  list-style-type: circle;
+  letter-spacing: 1px;
+  width: 600px;
+  font-size: 17px;
+}
+
+.ourwishes div {
+  position: relative;
+  left: 800px;
+  top: 100px;
+}
+
+.ourwishes img {
+  margin-top: 220px;
+  position: relative;
+  left: -600px;
+  z-index: -1;
+}
+
+.ourwishes h4 {
+  position: relative;
+  z-index: -1;
+}
+
+.ourwishes {
+  display: inline-flex;
+  /* align-items items in column */
+  flex-direction: row;
+  /* center items horizontally */
+  align-items: center;
+  /* center items vertically */
+  justify-content: center;
+  position: relative;
+  top: -200px;
+  left: -30px;
+}
+.fundraisefooter {
+  margin: 0;
+}
+
+.middle {
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+.weneedyourhelp{
+  position: relative;
+  top: -150px;
+}
+
+.middle li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 17px;
+  text-align: center;
+  } 
+
+.ourmission p {
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  top: -40px;
+}
+
+.ourmission {
+  position: relative;
+  top: -130px;
+}
+
+.ourmission > img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutus {
+  height: 2400px;
+}
+
+/* statistics */
+.statisticsbody, li   {
+  font-family: 'Open Sans' sans-serif;
+
+}
+/* wish journey */
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #30546C;
+  text-align: center;
+}
+
+.wishprocess {
+  font-family: 'Opens Sans', sans-serif;
+  color: #30546C;
+  font-size: 25px;
+  font-weight: 530;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  z-index: 1;
+}
+
+.wishjourney {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+/* wishstories */
+.profile1 {
+  margin-left: 100px;
+}
+
+.profile2 {
+  position: relative;
+  left: 830px;
+  top: 80px;
+  }
+
+h3 {
+  font-family: 'Opens Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 200px;
+  color: #3F6F89;
+  letter-spacing: 2px;
+}
+
+h3:hover {
+  color: rgb(47, 76, 92);
+}
+
+h3:active {
+  color: rgb(136, 176, 197);
+}
+
+.name1 {
+  width: 600px;
+  float: right;
+  margin-right: 100px;
+  position: relative;
+  top: -50px;
+}
+
+.name2 {
+  width: 600px;
+  position: relative;
+  left: 100px;
+  top: -580px;
+  color: #3F6F89;
+}
+
+.name2:hover {
+  color: rgb(47, 76, 92);
+}
+
+.name2:active {
+  color: rgb(136, 176, 197);
+}
+
+.backgroundstory1 {
+  width: 600px;
+  float: right;
+  margin-right: 100px;
+  position: relative;
+  top:-500px;
+}
+
+.backgroundstory2 {
+  width: 600px;
+  margin-left: 100px;
+  position: relative;
+  top: -610px;
+}
+
+.readmore1 {
+  color: #3F6F89;
+  font-weight: 800;
+  float: right;
+  position: relative;
+  left: 330px;
+  top: -110px;
+}
+
+.readmore1:hover {
+  color: rgb(47, 76, 92);
+}
+
+.readmore1:active {
+  color: rgb(136, 176, 197);
+}
+
+.readmore2 {
+  color: #3F6F89;
+  font-weight: 800;
+  margin-left: 350px;
+  position: relative;
+  top: -600px;
+
+}
+
+.readmore2:hover {
+  color: rgb(47, 76, 92);
+}
+
+.readmore2:active {
+  color: rgb(136, 176, 197);
+}
+
+.wishstorytwo {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wishstoriesbutton {
+  background-color: #FFB94D;
+  width: 300px;
+  height: 60px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  color:#303030;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -480px;
+}
+
+.wishstoriesbutton:hover {
+  background-color: rgb(255, 173, 51);
+  cursor: pointer;
+}
+
+.wishstoriesbutton:active {
+  background-color: rgb(255, 203, 125);
+}
+
+/* get involved */
+#getinvolved {
+  height: 350px;
+}
+.getinvolvedheading {
+  position: relative;
+  top: -480px;
+}
+
+.getinvolveddescription {
+  width: calc(100% - 200px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -530px;
+}
+
+.getinvolvedimg {
+  width: 250px;
+  display: inline-block;
+  position: relative;
+  top: -470px;
+}
+
+.getinvolveddonate,.getinvolvedfundraise, .getinvolvedvolunteer, .getinvolvedshare {
+  display: inline-flex;
+  /* align-items items in column */
+  flex-direction: column;
+  /* center items horizontally */
+  align-items: center;
+  /* center items vertically */
+  justify-content: center;
+}
+
+.getinvolvedbuttons {
+  display: flex;
+  justify-content: center;
+}
+
+.action {
+  width: 120px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #FFB94D;
+  margin-left: 95px;
+  margin-right: 95px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #303030;
+  text-align: center;
+  font-size: 19px;
+  border: none;
+  position: relative;
+  top: -420px;
+}
+
+.action:hover {
+  background-color: rgb(255, 173, 51);
+  cursor: pointer;
+}
+
+.action:active {
+  background-color: rgb(255, 203, 125);
+}
+
+/* DONATE PAGE */
+.donateheading {
+  text-align: center;
+  position: relative;
+  top: -150px;
+}
+
+.donatedescription {
+  position: relative;
+  top: -200px;
+  width: calc(100% - 400px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.donationbuttons {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #C3DCDF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #3F6F89;
+  font-size: 50px;
+  border: none; 
+}
+
+.donationbuttons:hover {
+  background-color: rgb(170, 204, 207);
+}
+
+.donationbuttons:active {
+  background-color: rgb(209, 229, 231);
+}
+
+.ownamountbutton {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #C3DCDF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #3F6F89;
+  font-size: 20px;
+  border: none;
+}
+
+.ownamountbutton:hover {
+  background-color: rgb(170, 204, 207);
+}
+
+.ownamountbutton:active {
+  background-color: rgb(209, 229, 231);
+}
+
+.donationeffect {
+  font-weight: normal;
+}
+
+.donationssuggestions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  top: -150px;
+}
+
+.donationssuggestions li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.donatenowbutton {
+  background-color: #FFB94D;
+  width: 300px;
+  height: 60px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  color:#303030;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -100px;
+}
+
+.donatenowbutton:hover {
+  background-color: rgb(255, 173, 51);
+}
+
+.donatenowbutton:active {
+  background-color: rgb(255, 203, 125);
+}
+
+.australiamap {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip {
+  display: inline-block;
+  color: #3F6F89;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  position: relative;
+  top: -460px;
+  left: 430px;
+}
+  
+.tooltip:hover {
+  color: rgb(47, 76, 92);
+}
+
+.tooltip:active {
+  color: rgb(136, 176, 197);
+}
+
+.tooltip > .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  color: #303030;
+  font-size: 70px;
+  margin: 50px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -230px;
+  right: 100%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.livedonationamount {
+  font-size: 25px;
+  text-align: center;  
+  position: relative;
+  top: -15px;
+}
+
+.totaldonatedbox {
+  width: auto;
+  background-color: rgb(191, 215, 218);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0;
+
+}
+
+.totaldonated {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #303030;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.amounttotaldonated {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #303030;
+  font-size: 140px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+/* fundraise */
+.fundraiseheading {
+  margin-top: 0;
+  text-align: left;
+  position: relative;
+  top: -70px;
+
+}
+
+.fundraisedescription {
+  width: 600px;
+  position: relative;
+  top: -100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.upcomingeventsheading {
+  color: #303030;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  position: relative;
+  left: 53%;
+  top: -300px;
+  background-color: #C3DCDF;
+  width: 550px;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.eventdate {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #3F6F89;
+  font-size: 35px;
+  border: none; 
+  text-align: center;
+  position: relative;
+  left: -170px;
+  top: 30px;
+  margin: 0;
+}
+
+.eventname {
+  position: relative;
+  top: -50px;
+  padding-left: 180px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.eventname:hover {
+  color: #3F6F89;
+}
+
+.eventname:active {
+  color: rgb(136, 176, 197);
+}
+
+.upcomingeventslist {
+  list-style-type: none;
+  position: relative;
+  top: -300px;
+  left: 53%;
+  margin: 0;
+  background-color: #C3DCDF;
+  width: 550px;
+  padding: 0;
+}
+
+.upcomingeventslist > a p {
+  color: #303030;
+
+}
+.upcomingeventslist > a:hover {
+  color: #3F6F89;
+}
+
+.upcomingeventslist > a:active {
+  color: rgb(136, 176, 197);
+}
+
+.upcomingevents {
+  position: relative;
+  top: -170px;
+  margin: 0;
+}
+
+.fundraisersectionone {
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  font-weight: bold;
+  color: #303030;
+}
+
+.enterpasscode {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #303030;
+  letter-spacing: 1px;
+  position: relative;
+  top: -50px;
+  left: -30px;
+}
+
+#postcodefundraise {
+  padding-left: 5px;
+  width: 150px;
+  height: 20px;
+  border-radius: 7px;
+  margin: 0;
+  position: relative;
+  top: -34px;
+  z-index: 1;
+}
+
+.findingnearestfundraiser {
+  /* make element inline flex-container */
+  /* this will make its children flex-items */
+  display: inline-flex;
+  /* align-items items in column */
+  flex-direction: column;
+  /* center items horizontally */
+  align-items: center;
+  /* center items vertically */
+  justify-content: center;
+  margin-left: 100px;
+  position: relative;
+  top: 40px;
+}
+
+.findfundraiserbutton {
+  width: 370px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #FFB94D;
+  border: none;
+  color:#303030;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  left: -10px;
+  z-index: 1;
+}
+
+.findfundraiserbutton:hover {
+  background-color: rgb(255, 173, 51);
+  cursor: pointer;
+}
+
+.findfundraiserbutton:active {
+  background-color: rgb(255, 203, 125);
+}
+
+.sydneymap {
+  width: 1200px;  
+  margin: 0;
+  position: relative;
+  left: -40px;
+}
+
+.fundraisersectionone {
+  height: 560px;
+}
+
+h4 {
+  color: #303030;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nearestfundraiserdescription {
+  text-align: center;
+  position: relative;
+  top: -15px;
+  width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.locationone, .locationtwo, .locationthree {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #303030;
+  position: relative;
+}
+
+.locationone:hover, .locationtwo:hover, .locationthree:hover {
+  background-color: #3F6F89;
+  z-index: 3;
+  position: relative;
+}
+
+.locationone {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: -360px;
+  left: -80px;
+}
+
+.locationtwo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: -630px;
+  left: -40px;
+}
+
+.locationthree {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: -430px;
+  left: -90px;
+}
+
+.eventthree {
+  width: 300px;
+  position: relative;
+  left: -210px;
+}
+
+.eventthree:hover {
+  color: #3F6F89;
+}
+
+.eventthree:active {
+  color: rgb(136, 176, 197);
+}
+
+.event {
+  padding-left: 50px;
+  width: 300px;
+}
+
+.event:hover {
+  color: #3F6F89;
+}
+
+.event:active {
+  color: rgb(136, 176, 197);
+}
+
+.listofevents {
+  width: 1200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.morefundraisers {
+  position: relative;
+  top: -80px;
+  height: 1150px;
+  margin: 0;
+}
+
+.ausrunningfest {
+ margin-left: 410px;
+ position: relative;
+ top: -1045px;
+}
+
+.bayswish {
+  position: relative;
+  top: -1205px;
+  left: -150px;
+  float: right;
+
+}
+
+.runmelb {
+  position: relative;
+  top: -830px;
+  left: 35px;
+  float: right;
+
+}
+
+.melbmarathon {
+  position: relative;
+  top: -830px;
+  left: -410px;
+  float: right;
+
+}
+
+.noosatriathlon {
+  position: relative;
+  top: -430px;
+  margin-left: 410px;
+
+}
+
+.citybay {
+  position: relative;
+  top: -595px;
+  left: 440px;
+  float: right;
+  margin: 0;
+}
+
+/* volunteer */
+.volunteer {
+  position: relative;
+  top: -140px;
+}
+
+.whyvolunteer {
+  position: relative;
+  top: -200px;
+}
+
+.volunteerdescription {
+  width: 500px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -200px; 
+}
+
+.applynowbutton {
+  background-color: #FFB94D;
+  width: 200px;
+  height: 60px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  color:#303030;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -180px;
+}
+
+.applynowbutton:hover {
+  background-color: rgb(255, 173, 51);
+  cursor: pointer;
+}
+
+.applynowbutton:active {
+  background-color: rgb(255, 203, 125);
+
+}
+
+.volunteerintro {
+  position: relative;
+  left: -300px;
+}
+
+.volunteerimg {
+position: relative;
+top: -550px;
+width: 700px;
+margin: 0;
+margin-left: auto;
+display: block;
+margin-bottom: 0;
+}
+
+.volunteertoppage {
+  height: 300px;
+}
+
+.jobname {
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  top: -395px;
+}
+
+.jobname:hover {
+  color: #3F6F89;
+}
+
+.jobname:active {
+  color: rgb(136, 176, 197);
+}
+
+.corporateimg, .skilledimg, .studentimg, .eventhelperimg {
+  width: 400px;
+}
+
+.corporateandskilled, .studentandevent {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.job1, .job2 {
+  flex: 50%;
+  display: inline-flex;
+  /* align-items items in column */
+  flex-direction: column;
+  /* center items horizontally */
+  align-items: center;
+  /* center items vertically */
+  justify-content: center;
+
+}
+
+.volunteeropportunities {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.applynowbutton2 {
+  background-color: #FFB94D;
+  width: 200px;
+  height: 60px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  color:#303030;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -80px;
+}
+
+.applynowbutton2:hover {
+  background-color: rgb(255, 173, 51);
+  cursor: pointer;
+}
+
+.applynowbutton2:active {
+  background-color: rgb(255, 203, 125);
+}
+
+/* share */
+.shareheading {
+  position: relative;
+  top: -160px;
+}
+
+.sharedescription {
+  position: relative;
+  top: -200px;
+  width: calc(100% - 400px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.share-ul {
+	list-style: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -180px;
+  margin-bottom: 30px;
+}
+
+.share-li {
+  display: inline-block;
+}
+
+.share-li a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+	color: #303030;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+	text-decoration: none;
+}
+
+.share-li a:hover {
+  color: #3F6F89;
+}
+
+.share-li a:active {
+  color: rgb(136, 176, 197);
+}
+/* 
+.shareintro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+
+#socialmedia {
+  position: relative;
+  top: -170px;
+  height: 1100px;
+}
+
+.socialmediarows {
+  display: inline-block;
+  width: 30%;
+}
+
+.socialmediacontent {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.shareimages {
+  width: 300px;
+  margin-bottom: 100px;
+}
+
+.socialmediadownloadbttn {
+  background-color: #FFB94D;
+  width: 200px;
+  height: 60px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  color:#303030;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+  top: -70px;
+}
+
+.sharevideos {
+  margin-bottom: 60px;
+}
+
+.videorows {
+  display: inline-block;
+  width: 40%;
+}
+
+#videos {
+  position: relative;
+  top: 200px;
+}
+
+.videoscontent {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 770px;
+}
+
+
+.socialmediadownloadbttn:hover{
+  background-color: rgb(255, 173, 51);
+  cursor: pointer;
+}
+
+.socialmediadownloadbttn:active {
+  background-color: rgb(255, 203, 125);
+}
+
+
+.individualmedias {
+  display: inline-flex;
+  /* align-items items in column */
+  flex-direction: column;
+  /* center items horizontally */
+  align-items: center;
+  /* center items vertically */
+  justify-content: center;
+  padding: 0;
+}
+
+.podcastimg {
+  position: relative;
+  left: 250px;
+  top: 10px
+  }
+
+.eptitle {
+  font-family: 'Open Sans', sans-serif;
+  color: #303030;
+  font-size: 20px;
+  font-weight: bold; 
+  width: 600px; 
+}
+
+.epdescription {
+  font-family: 'Open Sans', sans-serif;
+  color: #303030;
+  font-weight: normal;
+  width: 650px;
+}
+
+.podcast-li {
+  margin-bottom: 50px;
+}
+
+.podcast-li > p {
+  margin: 7px;
+}
+
+.podcastepisodes {
+  position: relative;
+  top: -420px;
+  display: block;
+  margin-left: 650px;
+  }
+
+#podcasts {
+  height: 1200px;
+}
+
+.podcastscontainer {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.podcastscontainer iframe {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+/* footer */
+footer ul  {
+  padding-left: 0;
+  margin-right: 200px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background-color: rgb(220, 235, 240);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0;
+  }
+
+.footer-li, .nolink, .footermenu {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  list-style-type: none;
+  margin-bottom: 15px;
+  color: #303030;
+  font-weight: 400;
+  position: relative;
+  left: 100px;
+}
+
+.footer-li:hover {
+  color: #3F6F89;
+}
+
+.footer-li:active {
+  color: rgb(136, 176, 197);
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.socialmediaicons {
+  padding-left: 60px;
+}
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* @media screen and (max-width: 860px) {
+	body {
+		display: block;
+	}
+	nav {
+		display: none;
+	}
+	section {
+		padding: 0.5em;
+	}
+	figure {
+		margin: 0;
+	}
+	figure iframe {
+		width: 100%;
+	}
+	figure img {
+		width: 100%;
+	}
+}
+
+
+/* Only use sticky nav if it can display at full height */
+
+/* @media (min-height: 300px) {
+	nav ul {
+		position: sticky;
+		top: 0;
+	}
+}
+

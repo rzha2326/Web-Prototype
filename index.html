@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Make-A-Wish</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+</head>
+
+<body>
+	<header>
+    <figure>
+        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+    </figure>
+    <nav>
+      <ul class="ul">
+        <li class="li"><a href="index.html#wishjourney">wish journey</a></li>
+        <li class="li"><a href="index.html#wishstories">wish stories</a></li>
+        <li class="li"><a href="index.html#getinvolved">get involved</a>
+          <ul class="dropdown">
+            <li class="dropdown-li"><a href="donate.html">donate</a></li>
+            <li class="dropdown-li"><a href="fundraise.html">fundraise</a></li>
+            <li class="dropdown-li"><a href="volunteer.html">volunteer</a></li>
+            <li class="dropdown-li"><a href="share.html">share</a></li>
+          </ul>
+        </li>
+		  </ul>
+    </nav>
+    <a href="donate.html"><button class="donatebutton">DONATE</button></a>
+	</header>
+
+  <main>
+    <section id="raffletickets">
+      <h1>Make-A-Wish<br>
+      Raffle</h1>
+      <p class="raffledescription">Make-A-Wish is introducing the Make-A-Wish Raffle where families of critically ill children can purchase tickets and have the chance to win the ultimate, monetary prize that can fulfill any wish. Whilst, purchasing your raffle tickets, you are also giving back to the Make-A-Wish Foundation, where we can help grant more wishes for other critically ill children. Purchase your raffle tickets today and help make a difference!</p>
+      <div class="raffleprices">
+        <div class="raffleboxes">
+            <button class="price">$2</button>
+            <p class="caption">per ticket</p>
+        </div>
+        <div class="raffleboxes">
+            <button class="price">$6</button>
+            <p class="caption">per 5<br>tickets</p>
+        </div>
+        <div class="raffleboxes">
+            <button class="price">$10</button>
+            <p class="caption">per 10<br>tickets</p>
+        </div>
+      </div>
+      <p class="luckywinner">you could be a lucky winner!</p>
+      <img class="raffleprizes" src="images/raffleprizes.png" alt="raffle prizes" width="1000">
+      <p class="extravouchers">PLUS $50 voucher for 20 lucky winners</p>
+      <img class="raffledetails" src="images/raffleconditions.png" alt="raffle details" width="900">
+      <!-- <button class="purchaseraffles">buy raffle tickets</button></a> -->
+      <div class="wrap-collabsible">
+        <input id="collapsible" class="toggle" type="checkbox">
+        <label for="collapsible" class="lbl-toggle">enter now to win !</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <h2>Purchase your Wish Tickets</h2>
+            <img class="progressbar" src="images/progressbar.png" alt="progress bar" width="1100">
+            <form id="buyraffleticketsform">
+              <div class="formcolumn">
+                <ul class="payment-ul">
+                  <h5 class="personaldetailssubheading">personal details</h5>
+                  <li class="payment-li">
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" required>
+                  </li> 
+                  <li class="payment-li">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"required>
+                  </li>
+                  <li class="payment-li">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" maxlength="10" required>
+                  </li>
+                  <li class="payment-li">
+                    <label for="DOB"> Date of Birth </label>
+                    <input type="date" id="DOB" name="dateofbirth" placeholder="DD/MM/YY" required>
+                  </li>
+                </ul>
+              </div>
+              <div class="formcolumn">
+                <ul class="payment-ul">
+                  <li class="payment-li">
+                    <label for="streetaddress">Street Address</label>
+                    <input id="address" name="streetaddress" type="text" required>
+                  </li> 
+                  <li>
+                    <li class="addresselements">
+                      <label for="city">City</label>
+                      <input id="city" name="city" type="text" required>
+                    </li>
+                    <li class="addresselements">
+                      <label for="postcode">Postcode</label>
+                      <input type="postal" id="postcode" name="postcode" maxlength="4" required>
+                    </li>
+                    <li class="addresselements">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" maxlength="3" required>
+                    </li>
+                  </li>
+                  <h5>raffle tickets</h5>
+                  <li class="payment-li">
+                    <label for="numberoftickets">Number of Tickets</label>
+                    <input type="number" id="numberoftickets" name="numberoftickets" required>
+                  </li>
+                  <li class="payment-li">
+                    <label for="medicalconditions">Child's Medical Condition </label>
+                    <input type="text" id="medicalcondition" name="medicalcondition" required>
+                  </li>
+                </ul>
+              </div>
+              <div class="formcolumn">
+                <ul>
+                  <h5 class="paymentsubheading">payment</h5>
+                  <li>
+                    <li class="addresselements">
+                      <label for="cardnumber">Card Number</label>
+                      <input id="cardnumber" name="cardnumber" type="tel" maxlength="16" required>
+                    </li>
+                    <li class="addresselements">
+                      <label for="expirydate">Expiry Date</label>
+                      <input type="text" id="expirydate" name="expirydate" maxlength="5" placeholder="MM/YY" required>
+                    </li>
+                    <li class="addresselements">
+                      <label for="CVC">CVC</label>
+                      <input type="tel" id="cvc" name="CVC" maxlength="4" required>
+                    </li>
+                  </li>
+                  <div class="totalandpurchase">
+                    <div class="total">
+                      <p><b>number of raffles: ___</b></p>
+                      <p><b>TOTAL: $__.__</b></p>
+                    </div>
+                    <button class="buybutton">buy tickets</button>
+                  </div>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="aboutus">
+      <h2>About Make-A-Wish</h2>
+      <div class="yearsofwishes">
+        <div>
+          <h4>35 years of wishes</h4>
+            <p>This November marks 35 years of wishes coming true for Australian wish kids.</p>
+            <p>'ve been creating inspirational, life-changing wishes in Australia since 1985 – from the very first wish by 16-year-old Shawn to see his favourite footy team in action.</p>
+            <p>Thanks to our supporters, more than 10,000 unforgettable wishes have been granted all across Australia.</p>
+        </div>
+        <img src="images/35yearsofwishes.png" alt="35 years of wishes">
+      </div>
+      <div class="ourwishes">
+        <div>
+          <h4>Our Wishes</h4>
+            <p>A wish is not a fleeting gift - each child's Wish Journey is carefully planned and delivered over several stages to create a positive, lasting impact.</p>
+            <ul>
+              <li>Wishes are designed to complement a child's medical treatment, working to calm, distract and inspire at a time they need it most.</li>
+              <li>When a wish is realised, a child discovers that despite their situation, anything is possible.</li>
+              <li>In this way, wishes deliver both an immediate boost and long lasting effect on the lives of sick kids, their families and communities.</li>
+            </ul>
+        </div>
+        <img src="images/ourwishes.png" alt="our wishes images">
+      </div>
+      <div class="weneedyourhelp">
+        <div>
+        <h4>We need your help</h4>
+          <div class="middle">
+            <p>In Australia today, the latest medical guidelines suggest more than 9,500 children have a life-threatening illness*.<br>Thousands more are born or diagnosed with serious illnesses each year:</p>
+            <ul>
+              <li>Around 3,000 babies are born with a heart condition each year (health.gov.au)</li>
+              <li>One in every 2,500 births produces a child with cystic fibrosis (cysticfybrosis.org.au)</li>
+              <li>950 children and adolescents are diagnosed with cancer (Children's Cancer Institute)</li>
+            </ul>
+            <p>While many children eventually go on to lead normal, healthy lives, everyday childhood experiences can easily get lost during the fight to survive.</p>
+            <p>There’s little opportunity for sick kids to just be kids, to use their imagination and enjoy the moments others take for granted.</p>
+            <p><em>*Source: Palliative Care Service Development Guidelines – Dec 2018 Paediatric Addendum</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="ourmission">
+        <div>
+          <h4>Our misson</h4>
+            <p>At Make-A-Wish, we exist to bring amazing people together to grant inspirational, life-changing wishes for children with a critical illness.</p>
+            <p>As one of Australia's Top 20 most trusted charities*, we work in partnership with sick children, their families and medical teams to design and deliver wishes that are as unique as the children who imagine them.</p>
+            <p>No two wishes are alike - but every wish transforms the lives of those involved, from children themselves to their family, friends, the wish team and wider community.</p>
+        </div>
+        <img src="images/ourmission.png" alt="our mission image" height="450">
+        <img src="images/ourmissiontwo.png" alt="our mission image" height="450">
+      </div>
+    </section>
+    <section id="statistics">
+      <h2>Statistics</h2>
+      <div class="statisticsbody">
+        <ul class="statistics-ul">
+          <li>Granted more than 10,000 wishes and counting since 1985</li>
+          <li>In 2019:</li>
+          <img src="images/wishesgranted.png" alt="wish journey statistics" width="1400">
+          <li>In the 2019 Financial Year, Make-A-Wish reported a surplus of $0.1 million with:</li>
+            <ul>
+              <li>an income of $14.6 million for the year (5% increase from 2017-2018)</li>
+              <li>expenses increased to $14.5 million</li>
+            </ul>
+          <li>As a charity that receives no government funding, Make-A-Wish relies on thr generosiyy of partners and supporters to make wishes happen</li>
+          <img src="images/financialreport.png" alt="financial report" width="700">
+          </ul>
+        </ul>
+      </div>
+      </h4>
+    </section>
+    <section id="wishjourney">
+      <h2>The Wish Journey</h2>
+      <!-- <p class="wishprocess">how a wish comes to life</p> -->
+      <img src="images/wishjourney.png" class="wishjourney" alt="wish journey">
+    </section>
+    <section id="wishstories">
+      <h2>Wish Stories</h2>
+      <div class="wishstoryone">
+        <a href="wishstories.html"><img src="images/profile.jpg" alt="Savannah" class="profile1" width="500px"></a>
+        <a href="wishstories.html" class="name1"><h3>Savannah</h3></a>
+        <p class="backgroundstory1">Wish mum Melissah remembers clearly the moment she was in a doctor’s office and was about to find out her daughter Savannah had a cancerous tumour.<br>
+        She had taken 17-month-old Savannah to the doctor after she hadn’t been feeling.<br>
+        It took a series of doctor appointments followed by an ultrasound which ultimately revealed the tumour.<br>
+        “It was my husband Sean, Savannah and myself – just the three of us – in the office when we were told,” Melissah said.<br>
+        “We were told it was rhabdomyosarcoma and I’d never heard of it before.”<br>
+        What Melissah quickly discovered was the tumour was an aggressive form of cancer in Savannah’ bladder. Treatment had to start immediately.<br>
+        “No one can be prepared for that,” Melissah said. “It was a whirlwind.”</p>
+        <a href="wishstories.html"><p class="readmore1">read more ><p></a>
+      </div>
+      <div class="wishstorytwo">
+        <a href="wishstories.html"><img src="images/profile1.jpg" alt="Dwayne" class="profile2" width="500px"></a>
+        <a href="wishstories.html" class="name2"><h3>Dwayne</h3></a>
+        <p class="backgroundstory2">Dwayne 4, has regular seizures and takes 16 pills a day which reduce, but cannot control, his epilepsy.<br>
+        Remember staring at the moon as a little kid and imagining what’s up there? After getting a telescope for his birthday, Dwayne knows the moon is full of aliens, and that Batman and Spiderman live there too!<br>
+        So Dwayne's wish was to visit the moon!<br>
+        To make Dwayne’s wish happen, we needed to bring in the experts of the skies. Enter Qantas, who brought their whole team on board – from check-in and cabin crew, to pilots and engineers – it’s been all hands on deck to make the impossible possible.<br>
+        Together, our #WishForce spent a year building up Dwayne for his wish, giving him a special moon lamp to keep bedside, letters from ‘Andy the astronaut’, and his very own spacesuit from NASA.<br>
+        For his mission to the moon, Dwayne was greeted at Adelaide airport by cheering fans, giant billboards from oOh! media, and a Stormtrooper escort to his specially chartered Qantas ‘rocket’ flight.<br></p>
+        <a href="wishstories.html"><p class="readmore2">read more ><p></a>
+      </div>
+      <a href="wishstories.html"><button class="wishstoriesbutton">more wish stories</button></a>
+    </section>
+    <section id="getinvolved">
+      <h2 class="getinvolvedheading">Get Involved</h2>
+      <p class="getinvolveddescription">There are everyday actions that you can get involved to raise awareness of Make-A-Wish. You can get involved by donating, no matter how small the amount is as a little can go a long way. You can  help fundraise by finding the nearest location of a fundraiser for you to join as well as volunteer as a student, event helper, etc. You can even raise awarenss and inspire your friends through sharing all types of media such as photos, videos, podcasts and even posters on your social media. Together, we can get involved and in turn help grant lifelong wishes to critically ill children as well as their familes.</p>
+      <div class="getinvolvedbuttons">
+        <div class="getinvolveddonate">
+            <img class="getinvolvedimg" src="images/donate.png" alt="get involved by donating">
+            <a href="donate.html"><button class="action">donate</button></a>
+        </div>
+        <div class="getinvolvedfundraise">
+            <img class="getinvolvedimg" src="images/fundraise.png" alt="get involved by fundraising">
+            <a href="fundraise.html"><button class="action">fundraise</button></a>
+        </div>
+        <div class="getinvolvedvolunteer">
+            <img class="getinvolvedimg" src="images/getinvolvedvolunteer.png" alt="get involved by volunteering">
+            <a href="volunteer.html"><button class="action">volunteer</button></a>
+        </div>
+        <div class="getinvolvedshare">
+            <img class="getinvolvedimg" src="images/share.png" alt="get involved by sharing">
+            <a href="share.html"><button class="action">share</button></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="aboutusfooter">
+      <ul>
+        <li><p class="footermenu"><b>about us</b></p></li>
+        <a href="index.html#aboutus"><li class="footer-li">about Make-A-Wish</li></a>
+        <a href="index.html#statistics"><li class="footer-li">statistics</li></a>
+        <a href="index.html"><li class="footer-li">Make-A-Wish raffle</li></a>
+        <a href="index.html#wishstories"><li class="footer-li">wish stories</li></a>
+        <a href="index.html#wishjourney"><li class="footer-li">wish journey</li></a>
+      </ul>
+    </div>
+    <div class="getinvolvedfooter">
+      <ul>
+        <li><p class="footermenu"><b>get involved</b></p></li>
+        <a href="donate.html"><li class="footer-li">donate</li></a>
+        <a href="fundraise.html"><li class="footer-li">fundraise</li></a>
+        <a href="volunteer.html"><li class="footer-li">volunteer</li></a>
+        <a href="share.html"><li class="footer-li">share</li></a>
+      </ul>
+    </div>
+    <div class="contactusfooter">
+      <ul>
+        <li><p class="footermenu"><b>contact us</b></p></li>
+        <li class="nolink"><b>call:</b> 1800 032 260</li>
+        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Contact+Us+-+website+query&to=enquiries@makeawish.org.au"><li class="footer-li"><b>email:</b> enquiries@makeawish.org.au</li></a>
+        <a href="https://goo.gl/maps/webyVfmxEiWyQFae6"><li class="footer-li"><b>address:</b><br>
+        Make-A-Wish Australia<br>
+        Level 1, Chruch Street<br>
+        Richmond, VIC 3121</li></a>
+        <li class="nolink"><b>mail:</b> PO Box 5006,<br>
+        Burnley 3121</li>
+      </ul>
+    </div>
+    <div class="socialfooter">
+      <ul>
+        <li><p class="footermenu"><b>get social!</b></p></li>
+        <li class="nolink">tag us @MakeAWishAust</li>
+      </ul>
+      <figure class="socialmediaicons">
+        <a href="https://www.facebook.com/MakeAWishAust/"><img src="images/facebook.png" class="icon" alt="facebok icon"></a>
+        <a href="https://www.youtube.com/c/MakeawishOrgAu/featured"><img src="images/youtube.png" class="icon" alt="youtube icon"></a>
+        <a href="https://twitter.com/MakeAWishAust"><img src="images/twitter.png" class="icon" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/makeawishaust/"><img src="images/instagram.png" class="icon" alt="instagram icon"></a>
+        <a href="https://www.linkedin.com/company/makeawishaust"><img src="images/linkedin.png" class="icon" alt="linkedin icon"></a>
+      </figure>
+    </div>
+  </footer>
+</body>
+</html>

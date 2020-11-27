@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Make-A-Wish</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+</head>
+
+<body>
+	<header>
+    <figure>
+        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+    </figure>
+    <nav>
+      <ul class="ul">
+        <li class="li"><a href="index.html#wishjourney">wish journey</a></li>
+        <li class="li"><a href="index.html#wishstories">wish stories</a></li>
+        <li class="li"><a href="index.html#getinvolved">get involved</a>
+          <ul class="dropdown">
+            <li class="dropdown-li"><a href="donate.html">donate</a></li>
+            <li class="dropdown-li"><a href="fundraise.html">fundraise</a></li>
+            <li class="dropdown-li"><a href="volunteer.html">volunteer</a></li>
+            <li class="dropdown-li"><a href="share.html">share</a></li>
+          </ul>
+        </li>
+		  </ul>
+    </nav>
+    <a href="donate.html"><button class="donatebutton">DONATE</button></a>
+	</header>
+
+  <main>
+    <section>
+      <h2 class="donateheading">Donate</h2>
+      <p class="donatedescription">Wishes couldn't come true without supporters like you. Every dollar and gift helps bring more wishes to life for kids with life-threatening illnesses.</p>
+      <div>
+        <ul class="donationssuggestions">
+          <a href="donateform.html"><li><button class="donationbuttons">$50</button></a><p class="donationeffect">$50 could help paint a<br>child's cubby house, a<br>special sanctuary away<br>from hospitals</p></li>
+          <a href="donateform.html"><li><button class="donationbuttons">$75</button></a><p class="donationeffect">$75 could help a child be<br> a superhero, building<br>their confidence and<br>resilience</p></li>
+          <a href="donateform.html"><li><button class="donationbuttons">$250</button></a><p class="donationeffect">$250 could go towards<br>making other<br>unforgettable wishes<br>come true</p></li>
+          <a href="donateform.html"><li><button class="ownamountbutton">choose your<br>own amount</button></a><p class="donationeffect">choose your own amount<br>to help grant wishes for<br>critically ill children<br>and their families</p></li>
+        </ul>
+      </div>
+      <a href="donateform.html"><button class="donatenowbutton">donate now</button></a>
+    </section>
+    <section>
+      <p class="livedonationamount">hover over each state to see how much has been donated to Make-A-Wish Australia</p>
+      <img src="images/australia.png" class="australiamap">
+      <div class="tooltip"><b>WA</b>
+        <span class="tooltiptext">$10, 847</span>
+      </div>
+      <div class="tooltip"><b>NT</b>
+        <span class="tooltiptext">$10, 847</span>
+      </div>
+      <div class="tooltip"><b>QLD</b>
+        <span class="tooltiptext">$10, 847</span>
+      </div><div class="tooltip"><b>NSW</b>
+        <span class="tooltiptext">$10, 847</span>
+      </div><div class="tooltip"><b>VIC</b>
+        <span class="tooltiptext">$10, 847</span>
+      </div><div class="tooltip"><b>SA</b>
+        <span class="tooltiptext">$10, 847</span>
+      </div><div class="tooltip"><b>TAS</b>
+        <span class="tooltiptext">$10, 847</span>
+      </div>
+    </section>
+    <section class="totaldonatedbox">
+      <p class="totaldonated">total donated: since November 2020</p><br>
+      <p class="amounttotaldonated">$7,373,024</p>
+    </section>
+  </main>
+  <footer>
+    <div class="aboutusfooter">
+      <ul>
+        <li><p class="footermenu"><b>about us</b></p></li>
+        <a href="index.html#aboutus"><li class="footer-li">about Make-A-Wish</li></a>
+        <a href="index.html#statistics"><li class="footer-li">statistics</li></a>
+        <a href="index.html"><li class="footer-li">Make-A-Wish raffle</li></a>
+        <a href="index.html#wishstories"><li class="footer-li">wish stories</li></a>
+        <a href="index.html#wishjourney"><li class="footer-li">wish journey</li></a>
+      </ul>
+    </div>
+    <div class="getinvolvedfooter">
+      <ul>
+        <li><p class="footermenu"><b>get involved</b></p></li>
+        <a href="donate.html"><li class="footer-li">donate</li></a>
+        <a href="fundraise.html"><li class="footer-li">fundraise</li></a>
+        <a href="volunteer.html"><li class="footer-li">volunteer</li></a>
+        <a href="share.html"><li class="footer-li">share</li></a>
+      </ul>
+    </div>
+    <div class="contactusfooter">
+      <ul>
+        <li><p class="footermenu"><b>contact us</b></p></li>
+        <li class="nolink"><b>call:</b> 1800 032 260</li>
+        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Contact+Us+-+website+query&to=enquiries@makeawish.org.au"><li class="footer-li"><b>email:</b> enquiries@makeawish.org.au</li></a>
+        <a href="https://goo.gl/maps/webyVfmxEiWyQFae6"><li class="footer-li"><b>address:</b><br>
+        Make-A-Wish Australia<br>
+        Level 1, Chruch Street<br>
+        Richmond, VIC 3121</li></a>
+        <li class="nolink"><b>mail:</b> PO Box 5006,<br>
+        Burnley 3121</li>
+      </ul>
+    </div>
+    <div class="socialfooter">
+      <ul>
+        <li><p class="footermenu"><b>get social!</b></p></li>
+        <li class="nolink">tag us @MakeAWishAust</li>
+      </ul>
+      <figure class="socialmediaicons">
+        <a href="https://www.facebook.com/MakeAWishAust/"><img src="images/facebook.png" class="icon" alt="facebok icon"></a>
+        <a href="https://www.youtube.com/c/MakeawishOrgAu/featured"><img src="images/youtube.png" class="icon" alt="youtube icon"></a>
+        <a href="https://twitter.com/MakeAWishAust"><img src="images/twitter.png" class="icon" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/makeawishaust/"><img src="images/instagram.png" class="icon" alt="instagram icon"></a>
+        <a href="https://www.linkedin.com/company/makeawishaust"><img src="images/linkedin.png" class="icon" alt="linkedin icon"></a>
+      </figure>
+    </div>
+  </footer>
+</body>
+</html>
